@@ -1,0 +1,77 @@
+.divsettings{
+	padding: 0px 0px 20px 0px;
+	background-color: #f2f2f2;
+}
+
+.buttondiv{
+    padding: 0px 0px 0px 38%;
+}
+
+.manybuttondiv{
+	padding: 0px 0px 0px 0px;
+}
+
+.buttonshape{
+   border-radius: 40px;
+}
+
+.manybutton{
+	padding: 20px 0px 20px 0px;
+}
+
+/*.grid{
+	padding: 0px 0px 40px 0px;
+	margin-bottom: 0rem;
+}*/
+.video{
+	display: block;
+	margin: 0 auto;
+	width: 320px;
+	height: 240px;
+	background-color: #f2f2f2;
+}
+
+.ourapps{
+	padding: 50px 0px 40px 0px;
+}
+
+@keyframes welcomediv{
+	 0%  {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.welcomeDiv{
+   background-color: yellow;
+   max-width: 100%;
+   height: 500px;
+   animation-name: welcomediv;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   padding-top: 40px;
+}
+
+.welcomeanmdiv{
+	padding: 40px 20px 40px 20px; 
+}
+
+.parent{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.image1{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.otherimage{
+	position: relative;
+	top: -2px;
+	left: -140px;
+	width: 122px;
+	height: 235px;
+}
