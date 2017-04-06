@@ -7,22 +7,23 @@
     padding: 0px 0px 0px 38%;
 }
 
-.manybuttondiv{
-	padding: 0px 0px 0px 0px;
-}
-
-.buttonshape{
+.ui.button{
    border-radius: 40px;
 }
 
 .manybutton{
-	padding: 20px 0px 20px 0px;
+	padding: 20px 40px 20px 40px;
 }
 
-/*.grid{
-	padding: 0px 0px 40px 0px;
-	margin-bottom: 0rem;
-}*/
+.ui.grid>.column:not(.row){
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.form{
+	max-width: 450px;
+}
+
 .video{
 	display: block;
 	margin: 0 auto;
@@ -52,10 +53,6 @@
    padding-top: 40px;
 }
 
-.welcomeanmdiv{
-	padding: 40px 20px 40px 20px; 
-}
-
 .parent{
 	position: relative;
 	top: 0;
@@ -68,10 +65,11 @@
 	left: 0;
 }
 
-.otherimage{
+.othervideo{
 	position: relative;
-	top: -2px;
-	left: -140px;
-	width: 122px;
-	height: 235px;
+	top: 100px;
+	left: -138px;
+	width: 120px;
+	height: 220px;
+	background-color: #f2f2f2;
 }
