@@ -10,6 +10,15 @@
  <link rel="shortcut icon" href="favicon.png">
  <title>Evento</title>
  <meta name="keywords" content="evento, events, events app, create app">
+ <script type="text/javascript">
+    $(document).ready(function(){
+     $('#logIn, #SignIn').click(function(){
+	  $("#modaldiv").modal('show');
+     $('.ui.form')
+	    .form();    
+     });
+    });
+ </script>
 </head>
 <body>
  <div class="ui container">
@@ -19,13 +28,45 @@
 	<a class="item">Company</a>
 	<a class="item">Careers</a>
 	<div class="buttondiv">
-	  <a href="login-signup.html">
-	  	<button class="ui green button">Log In</button>
-	  </a>
-	  <a href="login-signup.html">
-	  	<button class="ui green button">Sign In</button>
-	  </a>
+	  <button id= "logIn" class="ui green button">Log In</button>
+	  <button id= "SignIn" class="ui green button">Sign In</button>
 	</div>
+	<div id="modaldiv" class="ui small modal">
+  <div class="ui middle aligned center aligned grid">
+  <div class="column form">
+    <h2 class="ui teal image header">
+      <div class="content">
+        Log-in to your Evento account
+      </div>
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" placeholder="E-mail address">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="ui buttons">
+  			<div class="ui submit button">Login</div>
+  			<div class="or"></div>
+  			<div class="ui red Google button">Login with Google</div>
+  			<div class="or"></div>
+  			<div class="ui blue Facebook button">Login with Facebook</div>
+		</div>
+      </div>
+      <div class="ui error message"></div>
+    </form>
+    <div class="ui message">New to us? <a href="#">Sign Up</a></div>
+  </div>
+</div>
+</div>
   </div>
  </div>
  <div class="welcomeDiv">
@@ -36,7 +77,9 @@
 	    <div class="eight wide center aligned column">
 	      <div class="parent">
 	   	  	<img class="ui small middle aligned image image1" src="mobilePhone.jpg"/>
-	   	  	<img class="ui middle aligned image otherimage" src="weddingImage.png">
+	   	  	<video class="othervideo" controls loop="loop">
+		      <source src="" type="video/mp4">
+	        </video>
 	   	  </div>
 	   	</div>
 	   </div>
@@ -45,9 +88,9 @@
   <div class="ui four column grid fourbuttondiv">
 	<div class="row">
 	  <div class="center aligned column manybutton">
-	    <a href="">
-	    	<button class="ui large green button">Wedding App</button>
-	    </a> 
+		<a href="">
+	      <button class="ui large green button">Wedding App</button>
+	     </a>
 	  </div>
 	  <div class="center aligned column manybutton">
 		<a href="">
