@@ -8,7 +8,7 @@
 }
 
 .ui.button{
-   border-radius: 40px;
+   border-radius: 4px;
 }
 
 .manybutton{
@@ -37,20 +37,20 @@
 }
 
 @keyframes welcomediv{
-	 0%  {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+	0%  {background-color: red;}
+	25%  {background-color: yellow;}
+	50%  {background-color: blue;}
+	100% {background-color: green;}
 }
 
 .welcomeDiv{
-   background-color: yellow;
-   max-width: 100%;
-   height: 500px;
-   animation-name: welcomediv;
-   animation-duration: 10s;
-   animation-iteration-count: infinite;
-   padding-top: 40px;
+	background-color: yellow;
+	max-width: 100%;
+	height: 500px;
+	animation-name: welcomediv;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	padding-top: 40px;
 }
 
 .parent{
@@ -72,4 +72,42 @@
 	width: 120px;
 	height: 220px;
 	background-color: #f2f2f2;
+}
+
+.color-block{
+	width: 100%;
+	height : 300px;
+	background-color:#2196F3
+}
+
+.mCarousel{
+
+}
+
+.raised-segment{
+	
+	position: relative;
+	width : 73%;
+	margin : 0 auto;
+	top: -75px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+	border-radius: 0.28571429rem;
+	border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.fit{
+	max-height: 100%;
+	max-width: 100%
+}
+
+.ui.button.rounded{
+	border-radius: 40px;
+	width: 25%;
+	height : 75px;
+	margin:0 auto;
+	font-size: 28px;
+	text-align: center;
+	vertical-align: middle;
+
 }

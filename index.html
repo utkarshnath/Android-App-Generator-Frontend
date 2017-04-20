@@ -1,182 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
- <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
- <link rel="stylesheet" type="text/css" href="background.css">
- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
- <script src="semantic/dist/semantic.min.js"></script>
- <link rel="shortcut icon" href="favicon.png">
- <title>Evento</title>
- <meta name="keywords" content="evento, events, events app, create app">
- <script type="text/javascript">
-    $(document).ready(function(){
-     $('#logIn, #SignIn').click(function(){
-	  $("#modaldiv").modal('show');
-     $('.ui.form')
-	    .form();    
-     });
-    });
- </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="background.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link href="http://jeffry.in/old-jeffry-in/css/jeffry.in.css" rel="stylesheet" />
+  <link href="http://jeffry.in/old-jeffry-in/css/jeffry.in.slider.css" rel="stylesheet" />
+  
+  <!-- JS files -->
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
+  <!-- <script src="slick/slick.min.js"></script> -->
+
+  <link rel="shortcut icon" href="favicon.png">
+  <title>Evento</title>
 </head>
 <body>
- <div class="ui container">
-  <div class="ui large secondary menu">
-	<a class="item">Home</a>
-	<a class="item">Work</a>
-	<a class="item">Company</a>
-	<a class="item">Careers</a>
-	<div class="buttondiv">
-	  <button id= "logIn" class="ui green button">Log In</button>
-	  <button id= "SignIn" class="ui green button">Sign In</button>
-	</div>
-	<div id="modaldiv" class="ui small modal">
-  <div class="ui middle aligned center aligned grid">
-  <div class="column form">
-    <h2 class="ui teal image header">
-      <div class="content">
-        Log-in to your Evento account
+  <div class="color-block">
+    <div class="ui centered grid container">
+      <div class="twelve wide column">
+        <h1 class="ui header" style="color: white">Evento</h1>
       </div>
-    </h2>
-    <form class="ui large form">
-      <div class="ui stacked segment">
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input type="text" name="email" placeholder="E-mail address">
-          </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
-          </div>
-        </div>
-        <div class="ui buttons">
-  			<div class="ui submit button">Login</div>
-  			<div class="or"></div>
-  			<div class="ui red Google button">Login with Google</div>
-  			<div class="or"></div>
-  			<div class="ui blue Facebook button">Login with Facebook</div>
-		</div>
-      </div>
-      <div class="ui error message"></div>
-    </form>
-    <div class="ui message">New to us? <a href="#">Sign Up</a></div>
-  </div>
-</div>
-</div>
-  </div>
- </div>
- <div class="welcomeDiv">
-   <div class="ui center aligned padded grid">
-	 <div class="row">
-	    <div class="eight wide column">
-	   	</div>	
-	    <div class="eight wide center aligned column">
-	      <div class="parent">
-	   	  	<img class="ui small middle aligned image image1" src="mobilePhone.jpg"/>
-	   	  	<video class="othervideo" controls loop="loop">
-		      <source src="" type="video/mp4">
-	        </video>
-	   	  </div>
-	   	</div>
-	   </div>
-   </div>
-  </div>  
-  <div class="ui four column grid fourbuttondiv">
-	<div class="row">
-	  <div class="center aligned column manybutton">
-		<a href="">
-	      <button class="ui large green button">Wedding App</button>
-	     </a>
-	  </div>
-	  <div class="center aligned column manybutton">
-		<a href="">
-	    	<button class="ui large green button">Corporate App</button>
-	    </a>
-	  </div>
-	  <div class="center aligned column manybutton">
-		<a href="">
-	    	<button class="ui large green button">Birthday App</button>
-	    </a>
-	  </div>
-	  <div class="center aligned column manybutton">
-		<a href="">
-	    	<button class="ui large green button">Fest App</button>
-	    </a>
-	  </div>
-	</div>
-  </div>   
-  <div class="row divsettings">
-    <video class="video" controls>
-		<source src="" type="video/mp4">
-	</video>
-  </div>
-  <div class="ourapps">
-    <div class="ui container">
-      <h2 class="header">Our Apps </h2>
-	  <div class="ui three stackable cards">
-	  <div class="ui raised orange card">
-	    <div class="image">
-	      <img src="white-image.png">
-	    </div>
-	    <div class="content">
-		    <div class="header">App name</div>
-		    <div class="meta">
-		      <span>2 days ago</span>
-		    </div>
-	   </div>
-	  </div>
-	  <div class="ui raised yellow card">
-	    <div class="image">
-	      <img src="white-image.png">
-	    </div>
-	    <div class="content">
-		    <div class="header">App name</div>
-		    <div class="meta">
-		      <span>10 days ago</span>
-		    </div>
-	    </div>
-	  </div>
-	  <div class="ui raised olive card">
-	    <div class="image">
-	      <img src="white-image.png">
-	    </div>
-	    <div class="content">
-		    <div class="header">App name</div>
-		    <div class="meta">
-		      <span>21 days ago</span>
-		    </div>
-	   </div>
-	  </div>
-	  </div>
-	</div>
-  </div>
-  <div class="ui inverted vertical footer segment">
-    <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
-        <div class="three wide column">
-          <h4>About</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Events</a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4>Services</h4>
-          <div class="ui inverted link list">
-            <a href="#" class="item"></a>
-          </div>
-        </div>
-        <div class="three wide column">
-          <h4>Footer Header</h4>
-          <p></p>
-        </div>
+      <div class="four wide column">
+        <button id="signUp" class="ui purple right floated button" style="height: 40px;width: 100px;margin-left: 12px">Sign Up</button>
+        <button id="logIn" class="ui red right floated button" style="height: 40px;width: 100px;margin-left: 12px">Log In</button>
       </div>
     </div>
+  </div>
+  <!-- <div class="ui centered grid container">
+    <div class="twelve wide column">
+      <h1 class="ui header">Evento</h1>
+    </div>
+    <div class="four wide column">
+      <button id="signUp" class="ui red basic right floated button">Sign Up</button>
+      <button id="logIn" class="ui primary basic right floated button">Log In</button>
+    </div>
+  </div> -->
+  <div class="raised-segment centered">
+    <div class="slider mCarousel">
+      <div class="slides">
+        <div class="slide-item birthday">
+          <img class="fit" src="http://birthdaywishes-quotess.com/wp-content/uploads/2015/10/happy-birthday-image-3.jpg">
+        </div>
+        <div class="slide-item fest">
+          <img src="http://i.imgur.com/V4AKJV3.jpg">
+        </div>
+      </div>
+      </div
+    </div>
+    <script>
+      $(".slider").glide({
+        autoplay:2000,
+        arrowsWrapperClass: 'slider-arrows',
+        arrowRightText: '',
+        arrowLeftText: ''
+      });
+    </script>
+  </div>
+  <div id="wrapper" style="text-align: center">     
+    <div class="ui button green rounded" style="display: inline-block;">Get Started</div>
   </div>
 </body>
 </html>
