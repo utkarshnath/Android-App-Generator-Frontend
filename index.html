@@ -6,64 +6,87 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="background.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="public/stylesheets/background.css">
   <link href="http://jeffry.in/old-jeffry-in/css/jeffry.in.css" rel="stylesheet" />
   <link href="http://jeffry.in/old-jeffry-in/css/jeffry.in.slider.css" rel="stylesheet" />
   
   <!-- JS files -->
-  <script src="jquery-3.2.1.min.js"></script>
+  <script src="public/javascripts/jquery-3.2.1.min.js"></script>
   <script src="semantic/dist/semantic.min.js"></script>
   <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
   <!-- <script src="slick/slick.min.js"></script> -->
 
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="public/images/favicon.png">
   <title>Evento</title>
 </head>
 <body>
-  <div class="color-block">
-    <div class="ui centered grid container">
-      <div class="twelve wide column">
-        <h1 class="ui header" style="color: white">Evento</h1>
-      </div>
-      <div class="four wide column">
-        <button id="signUp" class="ui purple right floated button" style="height: 40px;width: 100px;margin-left: 12px">Sign Up</button>
-        <button id="logIn" class="ui red right floated button" style="height: 40px;width: 100px;margin-left: 12px">Log In</button>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="ui centered grid container">
-    <div class="twelve wide column">
-      <h1 class="ui header">Evento</h1>
-    </div>
-    <div class="four wide column">
-      <button id="signUp" class="ui red basic right floated button">Sign Up</button>
-      <button id="logIn" class="ui primary basic right floated button">Log In</button>
-    </div>
-  </div> -->
   <div class="raised-segment centered">
+
+    <!-- Carousel -->
     <div class="slider mCarousel">
       <div class="slides">
-        <div class="slide-item birthday">
-          <img class="fit" src="http://birthdaywishes-quotess.com/wp-content/uploads/2015/10/happy-birthday-image-3.jpg">
+        <div class="slide-item">
+          <img class="ui fluid image" src="public/images/1.jpg">
         </div>
-        <div class="slide-item fest">
-          <img src="http://i.imgur.com/V4AKJV3.jpg">
+        <div class="slide-item">
+          <img class="ui fluid image" src="public/images/2.jpg">
+        </div>
+        <div class="slide-item">
+          <img class="ui fluid image" src="public/images/3.jpg">
+        </div>
+        <div class="slide-item">
+          <img class="ui fluid image" src="public/images/4.jpg">
+        </div>
+        <div class="slide-item">
+          <img class="ui fluid image" src="public/images/5.jpg">
         </div>
       </div>
-      </div
     </div>
-    <script>
-      $(".slider").glide({
-        autoplay:2000,
-        arrowsWrapperClass: 'slider-arrows',
-        arrowRightText: '',
-        arrowLeftText: ''
-      });
-    </script>
+
+    <!-- Scrim above the carousel to achieve more legibility -->
+    <div class="scrim"></div>
+
   </div>
+
+
+  <div class="ui two column centered grid header_container"> 
+
+    <!-- Evento header -->
+    <div class="one column centered row">
+      <div class="four wide column">
+        <h1 class="ui header" style="font-size: 10em">Evento</h1>
+      </div>
+    </div>
+    
+    <!-- Horizontal Divider -->
+    <div class="one column centered row">
+      <div class="eight wide column">
+          <hr class="divider"/>
+      </div>
+    </div>
+
+    <!-- Single line -->
+    <div class="one column centered row">
+      <div class="eight wide column" style="text-align: center;">
+        <h4 class="ui header phrase">We make application developement piece of cake.</h4>
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- <img class="ui right floated image" style="height : 600px ; position: relative;" src="public/images/Nexus_5_Front_View.png">
+   -->
+  <script>
+    $(".slider").glide({
+      type:"slideshow",
+      autoplay:2000,
+      arrowsWrapperClass: 'slider-arrows',
+      arrowRightText: '',
+      arrowLeftText: ''
+    });
+  </script>
   <div id="wrapper" style="text-align: center">     
-    <div class="ui button green rounded" style="display: inline-block;">Get Started</div>
+    <div class="ui button green" style="display: inline-block;">Get Started</div>
   </div>
 </body>
 </html>
