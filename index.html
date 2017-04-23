@@ -11,10 +11,18 @@
   <link href="http://jeffry.in/old-jeffry-in/css/jeffry.in.slider.css" rel="stylesheet" />
 
   <!-- JS files -->
+  
+  <!-- JQUERY JAVASCRIPT -->
   <script src="public/javascripts/jquery-3.2.1.min.js"></script>
+  <!-- SEMANTIC JAVASCRIPT -->
   <script src="semantic/dist/semantic.min.js"></script>
+  <!-- GLIDE JAVASCRIPT -->
   <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
-  <!-- <script src="slick/slick.min.js"></script> -->
+  <!-- SMOOTH SCROLLING -->
+  <script src="node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
+
+  <!-- Client Script -->
+  <script type="text/javascript" src="public/javascripts/client.js"></script>
 
   <link rel="shortcut icon" href="public/images/favicon.png">
   <title>Evento</title>
@@ -50,15 +58,15 @@
 
     <!-- Evento header -->
     <div class="one column centered row">
-      <div class="four wide column">
-        <h1 class="ui header" style="font-size: 10em">Evento</h1>
+      <div class="six wide column">
+        <h1 class="ui header" style="font-size: 10em; text-align: center;">Evento</h1>
       </div>
     </div>
 
     <!-- Horizontal Divider -->
     <div class="one column centered row">
       <div class="eight wide column">
-          <hr class="divider"/>
+        <hr class="divider"/>
       </div>
     </div>
 
@@ -71,8 +79,13 @@
 
   </div>
 
+  <div id="b_started_wrapper" style="text-align: center">
+    <div class="ui inverted white basic button b_started" id="b_started" style="display: inline-block;font-size: 24px;vertical-align: middle;">Get Started
+    </div>
+  </div>
+
   <!-- <img class="ui right floated image" style="height : 600px ; position: relative;" src="public/images/Nexus_5_Front_View.png">
-   -->
+  -->
   <script>
     $(".slider").glide({
       type:"slideshow",
@@ -82,49 +95,40 @@
       arrowLeftText: ''
     });
   </script>
-  <div id="wrapper" style="text-align: center">
-    <div class="ui button green" style="display: inline-block;">Get Started</div>
-  </div>
 
-  <div class="ui three column stackable centered grid">
-    <div class="column">
-      <div class="ui one cards">
-        <a class="white card">
-          <div class="image">
-            <img src="public/images/wedding.jpg">
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui one cards">
-        <a class="white card">
-          <div class="image">
-            <img src="public/images/corporate.jpg">
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-    <div class="ui three column stackable centered grid">
-      <div class="column">
-        <div class="ui one cards">
-          <a class="white card">
-            <div class="image">
-              <img src="public/images/fest.jpg">
-            </div>
-          </a>
+
+
+  <!-- Section2 - Select the event cards  -->
+  <a id="event_selection" href="#event_selection"></a>
+  <div class="ui two column centered grid">
+    <div class="six wide column">
+      <div class="ui centered raised link card" style="height: 80%;width: 80%;">
+        <div class="image">
+          <img src="public/images/wedding.jpg">
         </div>
       </div>
-      <div class="column">
-        <div class="ui one cards">
-          <a class="white card">
-            <div class="image">
-              <img src="public/images/birthday.jpg">
-            </div>
-          </a>
+    </div>
+    <div class="six wide column">
+      <div class="ui centered raised link card" style="height: 80%;width: 80%;">
+        <div class="image">
+          <img src="public/images/corporate.jpg">
         </div>
       </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui centered raised link card" style="height: 80%;width: 80%;">
+        <div class="image">
+          <img src="public/images/fest.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="six wide column">
+      <div class="ui centered raised link card" style="height: 80%;width: 80%;">  
+        <div class="image">
+          <img src="public/images/birthday.jpg">
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
