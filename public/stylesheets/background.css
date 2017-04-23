@@ -43,7 +43,7 @@
 }
 
 .ui.button.green{
-	
+
 	padding: 0px;
 	margin-top: 4.5%;
 	position:relative;
@@ -62,4 +62,8 @@
     border-top: 1px solid #fff;
     margin: 1em 0;
     padding: 0;
+}
+
+.ui.menu{
+	/*background: #283593;*/
 }
