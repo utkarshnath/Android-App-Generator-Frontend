@@ -11,6 +11,9 @@
 .ui.header {
 	font-family: "Aileron";
 	color: white;
+	font-size: 10em; 
+	text-align: center;
+	font-weight: normal;
 }
 
 .header_container{
@@ -70,7 +73,7 @@
 	top: -60%
 }
 
-.b_started{
+#b_started{
 
 	padding: 0px;
 	position:relative;
@@ -80,6 +83,25 @@
 	height: 75px;
 	width: 250px;
 }
+
+#b-signup{
+
+	position:absolute;
+	top:10%;
+	left: 90%;
+	z-index: 51;
+
+}
+
+#b-signin{
+
+	position:absolute;
+	top:10%;
+	left: 84.7%;
+	z-index: 51;
+
+}
+
 .ui.menu{
 	/*background: #283593;*/
 }
