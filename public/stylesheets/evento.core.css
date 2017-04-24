@@ -127,3 +127,36 @@
 	height: 75px;
 	width: 250px;
 }
+
+/* ********************** CARD COLORS **************************/
+#wedding-card-div {
+	display:flex;
+  	justify-content: center;
+  	align-items:center;
+	height: 180px;
+	background-color: #FFD632;
+}
+
+#fest-card-div {
+	display:flex;
+  	justify-content: center;
+  	align-items:center;
+	height: 180px;
+	background-color: #EF3F75;
+}
+
+#corporate-card-div {
+	display:flex;
+  	justify-content: center;
+  	align-items:center;
+	height: 180px;
+	background-color: #4C3A79;
+}
+
+#birthday-card-div {
+	display:flex;
+  	justify-content: center;
+  	align-items:center;
+	height: 180px;
+	background-color: #FDCB86;
+}
