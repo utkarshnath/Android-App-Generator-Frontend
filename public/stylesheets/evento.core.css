@@ -1,3 +1,5 @@
+
+/* ------------- Fonts -------------------*/
 @font-face{
 	font-family: "Aileron";
 	src:url("../fonts/Aileron-Thin.otf");
@@ -8,6 +10,9 @@
 	src:url("../fonts/Aileron-LightItalic.otf");
 }
 
+
+
+/* ---------- Headers ----------------*/
 .ui.header {
 	font-family: "Aileron";
 	color: white;
@@ -27,6 +32,8 @@
 	font-size: 2em;
 }
 
+
+/* ---------- Semantic Inspired Raised Segment ----------------*/
 .raised-segment{
 	position: relative;
 	width : 100%;
@@ -39,6 +46,8 @@
 	border: 1px solid rgba(34, 36, 38, 0.15);
 }
 
+
+/* -------------- Scrim ----------------------------*/
 .scrim{
 	position:relative;
 	height : 100%;
@@ -46,18 +55,8 @@
 	background: rgba(0,0,0,0.5);
 }
 
-.ui.button.green{
 
-	padding: 0px;
-	margin-top: 4.5%;
-	position:relative;
-	top: -270px;
-	font-size: 18px;
-	font-family: "Aileron";
-	line-height: 75px;
-	height: 75px;
-	width: 250px;
-}
+/* -------------- Divider -------------------------*/
 
 .divider{
 	display: block;
@@ -67,6 +66,9 @@
     margin: 1em 0;
     padding: 0;
 }
+
+
+/* ------- Buttons CSS ---------------- */
 
 #b_started_wrapper{
 	position: relative;
@@ -97,11 +99,20 @@
 
 	position:absolute;
 	top:10%;
-	left: 84.7%;
+	left: 85%;
 	z-index: 51;
 
 }
 
-.ui.menu{
-	/*background: #283593;*/
+.ui.button.green{
+
+	padding: 0px;
+	margin-top: 4.5%;
+	position:relative;
+	top: -270px;
+	font-size: 18px;
+	font-family: "Aileron";
+	line-height: 75px;
+	height: 75px;
+	width: 250px;
 }
