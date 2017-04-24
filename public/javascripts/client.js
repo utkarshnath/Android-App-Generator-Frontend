@@ -2,10 +2,6 @@ $(document).ready(function(){
 	
 	callback = function(anchor,toggle){
 
-		// Moved to event selection animate input events
-		if (anchor == document.querySelector("#event_selection")) {
-			
-		}
 	};
 
 	smoothScroll.init({
@@ -19,6 +15,7 @@ $(document).ready(function(){
 
 	// Add on click listener
 	$("#b_started").click(function(){
+			
 		console.log("Button Clicked!!");
 		smoothScroll.animateScroll(document.querySelector("#event_selection"));
 	});
