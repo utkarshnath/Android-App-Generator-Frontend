@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 
 	/************************ GLIDE *****************************************************************8*/
 
@@ -24,6 +23,11 @@ $(document).ready(function(){
 		easing: 'easeInOutCubic', // Easing pattern to use
 		offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
 		callback: callback // Function to run after scrolling
+	});
+
+	/****************** DIMMER BLUR ***************************************************************************/
+	$('.special.card .div').dimmer({
+		on : 'hover'
 	});
 
 
