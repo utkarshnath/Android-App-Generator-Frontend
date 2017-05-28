@@ -16,7 +16,7 @@
 #main-header {
 	font-family: "Aileron";
 	color: white;
-	font-size: 10em; 
+	font-size: 10em;
 	text-align: center;
 	font-weight: normal;
 }
@@ -160,6 +160,15 @@
 	height: 180px;
 	background-color: #FDCB86;
 }
+
+/*.internal{
+ display: inline-block;
+}
+
+
+.evento_section{
+	overflow: hidden;
+}*/
 
 /********** EVENT-LINKED-CARDS ************************ */
 
