@@ -37,10 +37,9 @@ $(document).ready(function(){
 	// Add on click listener for get started button
 	// Clicking that button smooth scrolls to event selection fragment of the page
 	$("#b_started").click(function(){
-			
+
 		console.log("Button Clicked!!");
 		smoothScroll.animateScroll(document.querySelector("#event_selection"));
 	});
 
 });
-
