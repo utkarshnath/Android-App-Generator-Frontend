@@ -42,4 +42,11 @@ $(document).ready(function(){
 		smoothScroll.animateScroll(document.querySelector("#event_selection"));
 	});
 
+	// $('#b_next').click(function() {
+	// 	 event.preventDefault();
+	// 	 $('#evento_section').animate({
+	// 		 scrollLeft: "+=300px"
+	// 	 }, "slow");
+	// });
+
 });
