@@ -34,10 +34,7 @@
 
   <!-- Raised Segment -->
   <div class="raised-segment">
-
-    <!-- Carousel -->
     <div id="Glide" class="glide">
-
       <div class="glide__wrapper" style="height: 100%;position: relative;">
         <ul class="glide__track">
           <li class="glide__slide">
@@ -54,13 +51,9 @@
           </li>
         </ul>
       </div>
-
-      <div class="glide__bullets"></div>
-
     </div>
-
-    <!-- Scrim above the carousel to achieve more legibility -->
-    <div class="scrim"></div></div>
+    <div class="scrim"></div>
+  </div>
 
   <!-- Login/Signup Buttons -->
   <div class="ui inverted button" id="b-signup">Sign Up</div>
@@ -68,27 +61,24 @@
 
   <!-- Header and Subheader -->
   <div class="ui two column centered grid header_container">
-
-    <!-- Evento header -->
     <div class="one column centered row">
       <div class="six wide column">
         <h1 class="ui header" id="main-header">Evento</h1>
       </div>
     </div>
-
     <!-- Horizontal Divider -->
     <div class="one column centered row">
       <div class="eight wide column">
         <hr class="divider"/>
       </div>
     </div>
-
     <!-- Single line -->
     <div class="one column centered row">
       <div class="eight wide column" style="text-align: center;">
         <h4 class="ui header" id="header-subline">We make application developement piece of cake.</h4>
       </div>
-    </div></div>
+    </div>
+  </div>
 
   <!-- Get Started button -->
   <div id="b_started_wrapper" style="text-align: center">
@@ -96,16 +86,16 @@
     </div>
   </div>
 
-  <div class="sub-header">Choose your event</div>
-
-  <!-- Section2 - Select the event cards  -->
-  <div class="ui four column relaxed centered grid">
-
-
-    <!-- Wedding Card -->
-    <div class="three wide column" id="wedding-card">
-      <div class="ui special fluid linked card">
-        <div class="ui fluid card">
+  <div class="ui grid stackable">
+    <div class="row">
+      <div class="sixteen column wide">
+        <!-- Added this ID here as onclick of "Get Started" button it scrolls to this ID-->
+        <div class="sub-header" id="event_selection" style="padding-bottom:20px">Choose your event</div>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="three wide column" id="wedding-card">
+        <div class="ui special fluid linked card">
           <div class="blurring dimmable div">
             <div class="ui dimmer">
               <div class="content">
@@ -128,11 +118,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="three wide column" id="corporate-card">
-      <div class="ui special linked fluid card">
-        <div class="ui fluid card">
+      <div class="three wide column" id="corporate-card">
+        <div class="ui special linked fluid card">
           <div class="blurring dimmable div">
             <div class="ui dimmer">
               <div class="content">
@@ -155,11 +143,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="three wide column" id="fest-card">
-      <div class="ui special linked fluid card">
-        <div class="ui fluid card">
+      <div class="three wide column" id="fest-card">
+        <div class="ui special linked fluid card">
           <div class="blurring dimmable div">
             <div class="ui dimmer">
               <div class="content">
@@ -182,40 +168,34 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="three wide column" id="birthday-card">
-      <div class="ui special linked fluid card">
-        <div class="ui fluid card">
-          <div class="blurring dimmable div">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  Base Price : It's Free
+        <div class="three wide column" id="birthday-card">
+          <div class="ui special linked fluid card">
+            <div class="blurring dimmable div">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    Base Price : It's Free
+                  </div>
                 </div>
               </div>
+              <div id="birthday-card-div">
+                <img class="image" src="public/icons/birthday-cake.png">
+              </div>
             </div>
-            <div id="birthday-card-div">
-              <img class="image" src="public/icons/birthday-cake.png">
-            </div>
-          </div>
-          <div class="content">
-            <div class="header">
-              Birthday
-            </div>
-            <div class="description">
-              Celebrate your birthday and preserve the special moments with an app made especially for you by you.
+            <div class="content">
+              <div class="header">
+                Birthday
+              </div>
+              <div class="description">
+                Celebrate your birthday and preserve the special moments with an app made especially for you by you.
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
   </div>
-  <a id="event_selection" href="#event_selection"></a>
 
   <div class="ui inverted vertical footer segment" style="margin-top:1em;">
    <div class="ui container">
