@@ -28,13 +28,11 @@
 }
 
 .sub-header{
-	position:relative;
-	top: -15%;
 	font-family: "Aileron";
 	color: rgba(0,0,0,0.57);
 	font-size: 6em;
 	text-align: center;
-	font-weight: normal;
+	padding-bottom: 50px
 }
 
 .header_container{
